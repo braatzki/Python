@@ -22,7 +22,7 @@ def get_headlines():
     titles = [unidecode.unidecode(listing['data']['title']) for listing in data['data']['children']]
     titles = '... '.join([i for i in titles])
     return titles
-
+    #this looks great
 
 @app.route("/")
 def homepage():
